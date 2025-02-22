@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transit Love Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Intro Screen -->
+  <div id="intro-screen" class="screen">
+    <div class="intro-content">
+      <img src="baekhyunintro.gif" alt="Baekhyun Intro" class="intro-gif">
+      <div class="intro-text">
+        <h1>Enter the Game</h1>
+        <button id="enter-button" onclick="startGame()">Enter</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Game Screen -->
+  <div id="game-screen" class="screen hidden">
+    <div class="container">
+      <h1>Transit Love Game</h1>
+      <div id="game-content">
+        <!-- Game content will be dynamically loaded here -->
+      </div>
+      <button id="next-button" onclick="nextStep()">Next</button>
+    </div>
+  </div>
+
+  <!-- End Screen -->
+  <div id="end-screen" class="screen hidden">
+    <div class="end-content">
+      <img src="end.gif" alt="End GIF" class="end-gif">
+      <h1>Bye! Hope you enjoyed!</h1>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
